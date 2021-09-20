@@ -5,5 +5,7 @@ export default ({ appointments }) => {
   const appointmentsJSX = appointments.map(({ time, patient }, index) => (
     <AppointmentInMonth time={time} patient={patient} key={index} />
   ));
-  return <div className="day">{appointmentsJSX}</div>;
+  const appointmentsJSXsorted = appointmentsJSX.sort((a,b) => a.props.time - b.props.time)
+
+  return <div className="day">{appointmentsJSXsorted}</div>;
 };

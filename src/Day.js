@@ -14,5 +14,7 @@ export default ({ appointments }) => {
       />
     )
   );
-  return <ul className="dayview">{appointmentsJSX}</ul>;
+  const appointmentsJSXsorted = appointmentsJSX.sort((a,b) => a.props.time - b.props.time)
+
+  return <ul className="dayview">{appointmentsJSXsorted}</ul>;
 };
