@@ -6,6 +6,7 @@ const dentistReducer = (state = dentists, action) => {
             return state.concat(action.payload);
     
         case "makeDentistIll":
+            const dentistIsSick = dentists.filter(dentist => dentist.id === action.payload)
             return state;
 
         default:
