@@ -17,6 +17,7 @@ export const dentistIsIll = (dentistId) => {
 }
 
 export const addPatient = (person) => {
+    console.log(person)
     return (dispatch) => {
         dispatch({
             type: 'addPatient',

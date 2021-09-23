@@ -1,20 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 
-class AppointmentForm extends React.Component{
-    constructor(){
-        super()
+const AppointmentForm = () => {
 
-    }
 
-    render(){
+ 
 
         return(
             <form className="appointmentForm">
                 
             </form>
         )
-    }
+   
 }
 
 export default AppointmentForm
