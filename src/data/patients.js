@@ -1,6 +1,8 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const patients = [
     {
-      id: 1,
+      id: uuidv4(),
       first_name: "Bamby",
       last_name: "McIlwraith",
       email: "bmcilwraith0@wunderground.com",
@@ -9,7 +11,7 @@ const patients = [
       sick: false
     },
     {
-      id: 2,
+      id: uuidv4(),
       first_name: "Alika",
       last_name: "Baruch",
       email: "abaruch1@multiply.com",
@@ -18,7 +20,7 @@ const patients = [
       sick: false
     },
     {
-      id: 3,
+      id: uuidv4(),
       first_name: "Shena",
       last_name: "Russon",
       email: "srusson2@goodreads.com",
@@ -27,7 +29,7 @@ const patients = [
       sick: false
     },
     {
-      id: 4,
+      id: uuidv4(),
       first_name: "Sunshine",
       last_name: "Tomeo",
       email: "stomeo3@netscape.com",
@@ -36,7 +38,7 @@ const patients = [
       sick: false
     },
     {
-      id: 5,
+      id: uuidv4(),
       first_name: "Cesar",
       last_name: "Hinstock",
       email: "chinstock4@techcrunch.com",
@@ -45,7 +47,7 @@ const patients = [
       sick: false
     },
     {
-      id: 6,
+      id: uuidv4(),
       first_name: "Olympie",
       last_name: "Spilsbury",
       email: "ospilsbury5@360.cn",
@@ -54,7 +56,7 @@ const patients = [
       sick: false
     },
     {
-      id: 7,
+      id: uuidv4(),
       first_name: "Lorry",
       last_name: "Sheldon",
       email: "lsheldon6@cafepress.com",
@@ -63,7 +65,7 @@ const patients = [
       sick: false
     },
     {
-      id: 8,
+      id: uuidv4(),
       first_name: "Kristin",
       last_name: "Gwyllt",
       email: "kgwyllt7@narod.ru",
@@ -72,7 +74,7 @@ const patients = [
       sick: false
     },
     {
-      id: 9,
+      id: uuidv4(),
       first_name: "Nathanil",
       last_name: "McQuie",
       email: "nmcquie8@foxnews.com",
@@ -81,7 +83,7 @@ const patients = [
       sick: false
     },
     {
-      id: 10,
+      id: uuidv4(),
       first_name: "Chloris",
       last_name: "Lealle",
       email: "clealle9@soundcloud.com",
@@ -90,7 +92,7 @@ const patients = [
       sick: false
     },
     {
-      id: 11,
+      id: uuidv4(),
       first_name: "Lusa",
       last_name: "Sheircliffe",
       email: "lsheircliffea@usatoday.com",
@@ -99,7 +101,7 @@ const patients = [
       sick: false
     },
     {
-      id: 12,
+      id: uuidv4(),
       first_name: "Abigael",
       last_name: "Fardoe",
       email: "afardoeb@vk.com",
@@ -108,7 +110,7 @@ const patients = [
       sick: false
     },
     {
-      id: 13,
+      id: uuidv4(),
       first_name: "Norean",
       last_name: "Bwy",
       email: "nbwyc@yandex.ru",
@@ -117,7 +119,7 @@ const patients = [
       sick: false
     },
     {
-      id: 14,
+      id: uuidv4(),
       first_name: "Myra",
       last_name: "Flips",
       email: "mflipsd@wunderground.com",
@@ -126,7 +128,7 @@ const patients = [
       sick: false
     },
     {
-      id: 15,
+      id: uuidv4(),
       first_name: "Olav",
       last_name: "Korneichuk",
       email: "okorneichuke@multiply.com",
@@ -135,7 +137,7 @@ const patients = [
       sick: false
     },
     {
-      id: 16,
+      id: uuidv4(),
       first_name: "Karalee",
       last_name: "Harteley",
       email: "kharteleyf@loc.gov",
@@ -144,7 +146,7 @@ const patients = [
       sick: false
     },
     {
-      id: 17,
+      id: uuidv4(),
       first_name: "Cybill",
       last_name: "Old",
       email: "coldg@mozilla.com",
@@ -153,7 +155,7 @@ const patients = [
       sick: false
     },
     {
-      id: 18,
+      id: uuidv4(),
       first_name: "Crystal",
       last_name: "Marioneau",
       email: "cmarioneauh@google.de",
@@ -162,7 +164,7 @@ const patients = [
       sick: false
     },
     {
-      id: 19,
+      id: uuidv4(),
       first_name: "Milzie",
       last_name: "Undy",
       email: "mundyi@ustream.tv",
@@ -171,7 +173,7 @@ const patients = [
       sick: false
     },
     {
-      id: 20,
+      id: uuidv4(),
       first_name: "Rosabel",
       last_name: "Josefowicz",
       email: "rjosefowiczj@drupal.org",
@@ -180,7 +182,7 @@ const patients = [
       sick: false
     },
     {
-      id: 21,
+      id: uuidv4(),
       first_name: "Monty",
       last_name: "Fader",
       email: "mfaderk@howstuffworks.com",
@@ -189,7 +191,7 @@ const patients = [
       sick: false
     },
     {
-      id: 22,
+      id: uuidv4(),
       first_name: "Pamella",
       last_name: "Welbourn",
       email: "pwelbournl@flickr.com",
@@ -198,7 +200,7 @@ const patients = [
       sick: false
     },
     {
-      id: 23,
+      id: uuidv4(),
       first_name: "Clim",
       last_name: "Nibley",
       email: "cnibleym@taobao.com",
@@ -207,7 +209,7 @@ const patients = [
       sick: false
     },
     {
-      id: 24,
+      id: uuidv4(),
       first_name: "Selinda",
       last_name: "McCole",
       email: "smccolen@discovery.com",
@@ -216,7 +218,7 @@ const patients = [
       sick: false
     },
     {
-      id: 25,
+      id: uuidv4(),
       first_name: "Toni",
       last_name: "Drysdale",
       email: "tdrysdaleo@google.de",
@@ -225,7 +227,7 @@ const patients = [
       sick: false
     },
     {
-      id: 26,
+      id: uuidv4(),
       first_name: "Mara",
       last_name: "Buck",
       email: "mbuckp@wikispaces.com",
@@ -234,7 +236,7 @@ const patients = [
       sick: false
     },
     {
-      id: 27,
+      id: uuidv4(),
       first_name: "Constantia",
       last_name: "Farny",
       email: "cfarnyq@nifty.com",
@@ -243,7 +245,7 @@ const patients = [
       sick: false
     },
     {
-      id: 28,
+      id: uuidv4(),
       first_name: "Angil",
       last_name: "Brunnstein",
       email: "abrunnsteinr@fc2.com",
@@ -252,7 +254,7 @@ const patients = [
       sick: false
     },
     {
-      id: 29,
+      id: uuidv4(),
       first_name: "Georgianne",
       last_name: "Godlee",
       email: "ggodlees@blogger.com",
@@ -261,7 +263,7 @@ const patients = [
       sick: false
     },
     {
-      id: 30,
+      id: uuidv4(),
       first_name: "Tilda",
       last_name: "Buyers",
       email: "tbuyerst@wisc.edu",
@@ -270,7 +272,7 @@ const patients = [
       sick: false
     },
     {
-      id: 31,
+      id: uuidv4(),
       first_name: "Gui",
       last_name: "Warman",
       email: "gwarmanu@ycombinator.com",
@@ -279,7 +281,7 @@ const patients = [
       sick: false
     },
     {
-      id: 32,
+      id: uuidv4(),
       first_name: "Daphene",
       last_name: "Hagley",
       email: "dhagleyv@globo.com",
@@ -288,7 +290,7 @@ const patients = [
       sick: false
     },
     {
-      id: 33,
+      id: uuidv4(),
       first_name: "Rois",
       last_name: "Riggott",
       email: "rriggottw@google.com",
@@ -297,7 +299,7 @@ const patients = [
       sick: false
     },
     {
-      id: 34,
+      id: uuidv4(),
       first_name: "Devina",
       last_name: "Filmer",
       email: "dfilmerx@illinois.edu",
@@ -306,7 +308,7 @@ const patients = [
       sick: false
     },
     {
-      id: 35,
+      id: uuidv4(),
       first_name: "Michel",
       last_name: "Grigs",
       email: "mgrigsy@addthis.com",
@@ -315,7 +317,7 @@ const patients = [
       sick: false
     },
     {
-      id: 36,
+      id: uuidv4(),
       first_name: "Tonie",
       last_name: "Giraudot",
       email: "tgiraudotz@feedburner.com",
@@ -324,7 +326,7 @@ const patients = [
       sick: false
     },
     {
-      id: 37,
+      id: uuidv4(),
       first_name: "Taddeo",
       last_name: "Casaccia",
       email: "tcasaccia10@ox.ac.uk",
@@ -333,7 +335,7 @@ const patients = [
       sick: false
     },
     {
-      id: 38,
+      id: uuidv4(),
       first_name: "Ola",
       last_name: "Clerke",
       email: "oclerke11@alibaba.com",
@@ -342,7 +344,7 @@ const patients = [
       sick: false
     },
     {
-      id: 39,
+      id: uuidv4(),
       first_name: "Erroll",
       last_name: "Fenelow",
       email: "efenelow12@gravatar.com",
@@ -351,7 +353,7 @@ const patients = [
       sick: false
     },
     {
-      id: 40,
+      id: uuidv4(),
       first_name: "Berrie",
       last_name: "Beteriss",
       email: "bbeteriss13@craigslist.org",
@@ -360,7 +362,7 @@ const patients = [
       sick: false
     },
     {
-      id: 41,
+      id: uuidv4(),
       first_name: "Roosevelt",
       last_name: "Yurenin",
       email: "ryurenin14@tinyurl.com",
@@ -369,7 +371,7 @@ const patients = [
       sick: false
     },
     {
-      id: 42,
+      id: uuidv4(),
       first_name: "Holly",
       last_name: "Ioannou",
       email: "hioannou15@goo.gl",
@@ -378,7 +380,7 @@ const patients = [
       sick: false
     },
     {
-      id: 43,
+      id: uuidv4(),
       first_name: "Prentiss",
       last_name: "Methringham",
       email: "pmethringham16@slashdot.org",
@@ -387,7 +389,7 @@ const patients = [
       sick: false
     },
     {
-      id: 44,
+      id: uuidv4(),
       first_name: "Claybourne",
       last_name: "McAllan",
       email: "cmcallan17@taobao.com",
@@ -396,7 +398,7 @@ const patients = [
       sick: false
     },
     {
-      id: 45,
+      id: uuidv4(),
       first_name: "Torrin",
       last_name: "Escoffrey",
       email: "tescoffrey18@theglobeandmail.com",
@@ -405,7 +407,7 @@ const patients = [
       sick: false
     },
     {
-      id: 46,
+      id: uuidv4(),
       first_name: "Lizbeth",
       last_name: "GiacobbiniJacob",
       email: "lgiacobbinijacob19@usa.gov",
@@ -414,7 +416,7 @@ const patients = [
       sick: false
     },
     {
-      id: 47,
+      id: uuidv4(),
       first_name: "Hermon",
       last_name: "Keddey",
       email: "hkeddey1a@biglobe.ne.jp",
@@ -423,7 +425,7 @@ const patients = [
       sick: false
     },
     {
-      id: 48,
+      id: uuidv4(),
       first_name: "Katharina",
       last_name: "Rydings",
       email: "krydings1b@tinyurl.com",
@@ -432,7 +434,7 @@ const patients = [
       sick: false
     },
     {
-      id: 49,
+      id: uuidv4(),
       first_name: "Livvyy",
       last_name: "Wheelband",
       email: "lwheelband1c@mayoclinic.com",
@@ -441,7 +443,7 @@ const patients = [
       sick: false
     },
     {
-      id: 50,
+      id: uuidv4(),
       first_name: "Asia",
       last_name: "Garraway",
       email: "agarraway1d@ebay.co.uk",

@@ -4,8 +4,8 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Home from "./Home";
 import Calendar from "./Calendar";
 import Day from "./Day";
-
-import generateRandomAppointments from "./utils";
+import { useSelector } from "react-redux";
+import generateRandomAppointments from "./data/utils";
 
 const appointments = generateRandomAppointments(150);
 

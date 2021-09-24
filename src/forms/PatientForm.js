@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useDispatch } from 'react-redux'
-import { addPatient } from '../state/actions/index'
 import { v4 as uuidv4 } from 'uuid';
 
 const Patientform = () => {   
@@ -33,8 +32,6 @@ const Patientform = () => {
         setEmail(event.target.value)
     }
 
-  
-
     const onSubmit = (event) => {
         event.preventDefault();
         const newPatient = {
@@ -46,8 +43,15 @@ const Patientform = () => {
             isSick: false,
             id: uuidv4(),
         }
-        dispatch(addPatient(newPatient))
+        
+        const action = {
+            type: "ADDPATIENT",
+            payload: newPatient
+        } 
+        dispatch(action)
     }
+
+    
 
 return(
     <div className="patientForms">
@@ -93,6 +97,21 @@ return(
                             onInput={onInputEmail}
                         />
                         <input type="submit" value="Add"/>  
+                    </form>
+                    <h4>Patient is Ill, cancel appointments</h4>
+                    <form className="illPatient">
+                        <input 
+                            type="search"
+                            placeholder="Search last name"
+                        />
+                         <input 
+                            type="search"
+                            placeholder="Search year of birth"
+                        />
+                         <input 
+                            type="search"
+                            placeholder="Search id"
+                        />
                     </form>
 
                 </div>

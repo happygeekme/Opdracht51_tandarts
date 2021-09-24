@@ -1,13 +1,22 @@
-import generateRandomAppointments from '../..utils';
+import { generateRandomAppointments } from '../..utils';
 
-const appointments = generateRandomAppointments;
+const appointmentsWithDupes = generateRandomAppointments();
+console.log(appointmentsWithDupes)
+// const appointments = () => {
+//     appointmentsWithDupes.filter(appointment => {
+//         if (appointment.)
+//     })
+// }
 
 const appointmentReducer = (state = appointments, action) => {
     switch(action.type) {
-        case "addAppointment":
+
+        case "ADDAPPOINTMENT":
             return state.concat(action.payload)
-        case "cancelAppointment":
+
+        case "CANCELAPPOINTMENT":
             return state.filter(appointment => appointment.id !== action.payload)
+
         default:
             return state;
     }

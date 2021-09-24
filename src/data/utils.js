@@ -1,6 +1,6 @@
-import { assistants } from "./data/assistants";
-import { patients } from "./data/patients";
-import { dentists } from "./data/dentists";
+import { assistants } from "./assistants";
+import { patients } from "./patients";
+import { dentists } from "./dentists";
 
 
 const getRandomName = (names) => {
@@ -27,6 +27,7 @@ const generateRandomAppointment = () => ({
   patient: getRandomName(patients),
   dentist: getRandomName(dentists),
   assistant: getRandomName(assistants),
+  
 });
 
 const generateRandomAppointments = num =>
@@ -34,5 +35,6 @@ const generateRandomAppointments = num =>
   Array(num)
     .fill(0)
     .map(_ => generateRandomAppointment());
+    
 
 export default generateRandomAppointments;
