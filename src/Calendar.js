@@ -11,6 +11,7 @@ const divideByDay = (appointments) => {
     }
     appointmentsByDay[day].push(appointment);
   });
+  console.log(appointmentsByDay)
   return appointmentsByDay;
 };
 

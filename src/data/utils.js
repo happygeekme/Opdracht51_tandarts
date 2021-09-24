@@ -5,7 +5,7 @@ import { dentists } from "./dentists";
 
 const getRandomName = (names) => {
   const person = names[Math.floor(Math.random() * names.length) ];
-  return  `${person.first_name} ${person.last_name}`;
+  return person;
   
 };
 
@@ -19,7 +19,11 @@ const getRandomTime = () => {
   }
 };
 
-const getRandomDay = () => Math.floor(Math.random() * 28) + 1;
+const getRandomDay = () => { 
+  let num = Math.floor(Math.random() * 28) + 1
+  return ([6,7,13,14,20,21,27,28].includes(num)) ? getRandomDay() : num;
+};
+
 
 const generateRandomAppointment = () => ({
   day: getRandomDay(),
