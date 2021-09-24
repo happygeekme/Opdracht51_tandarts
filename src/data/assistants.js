@@ -1,6 +1,8 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const assistants = [  
     {
-      id: 55,
+      id: uuidv4(),
       first_name: "Myer",
       last_name: "Fairall",
       phone: "209 658 2330",
@@ -8,7 +10,7 @@ const assistants = [
       sick: false
     },
     {
-      id: 56,
+      id: uuidv4(),
       first_name: "Emma",
       last_name: "Gillum",
       phone: "487 265 3495",

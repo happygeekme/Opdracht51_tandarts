@@ -1,7 +1,9 @@
+import { v4 as uuidv4 } from 'uuid';
+
 const dentists = [
     
   {
-      id: 51,
+      id: uuidv4(),
       first_name: "Adriano",
       last_name: "Bloxland",
       phone: "819 902 0236",
@@ -10,7 +12,7 @@ const dentists = [
     },
     
     {
-      id: 52,
+      id: uuidv4(),
       first_name: "Row",
       last_name: "Janecki",
       phone: "680 312 0582",
@@ -19,7 +21,7 @@ const dentists = [
     },
 
     {
-      id: 53,
+      id: uuidv4(),
       first_name: "Mikel",
       last_name: "Chiese",
       phone: "771 870 8163",
@@ -28,7 +30,7 @@ const dentists = [
     },
 
     {
-      id: 54,
+      id: uuidv4(),
       first_name: "Araldo",
       last_name: "Bourton",
       phone: "386 586 7981",

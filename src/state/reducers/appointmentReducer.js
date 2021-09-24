@@ -1,16 +1,10 @@
-import { generateRandomAppointments } from '../..utils';
+import appointments from "../../data/utils";
 
-const appointmentsWithDupes = generateRandomAppointments();
-console.log(appointmentsWithDupes)
-// const appointments = () => {
-//     appointmentsWithDupes.filter(appointment => {
-//         if (appointment.)
-//     })
-// }
 
 const appointmentReducer = (state = appointments, action) => {
+    console.log(appointments)
     switch(action.type) {
-
+        
         case "ADDAPPOINTMENT":
             return state.concat(action.payload)
 

@@ -37,4 +37,6 @@ const generateRandomAppointments = num =>
     .map(_ => generateRandomAppointment());
     
 
-export default generateRandomAppointments;
+const appointments = generateRandomAppointments(150);
+
+export default appointments;

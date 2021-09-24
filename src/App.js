@@ -5,11 +5,12 @@ import Home from "./Home";
 import Calendar from "./Calendar";
 import Day from "./Day";
 import { useSelector } from "react-redux";
-import generateRandomAppointments from "./data/utils";
 
-const appointments = generateRandomAppointments(150);
+const App = () => {
+const appointments = useSelector(state => state.appointments)
+console.log(appointments)
 
-const App = () => (
+return (
   <Router>
     <div>
       <nav>
@@ -40,5 +41,5 @@ const App = () => (
       </main>
     </div>
   </Router>
-);
+)};
 export default App;
