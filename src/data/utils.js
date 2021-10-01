@@ -1,6 +1,7 @@
 import { assistants } from "./assistants";
 import { patients } from "./patients";
 import { dentists } from "./dentists";
+import {  v4 as uuidv4 } from "uuid"
 
 
 const getRandomName = (names) => {
@@ -28,10 +29,10 @@ const getRandomDay = () => {
 const generateRandomAppointment = () => ({
   day: getRandomDay(),
   time: getRandomTime(),
+  key: uuidv4(),
   patient: getRandomName(patients),
   dentist: getRandomName(dentists),
   assistant: getRandomName(assistants),
-  
 });
 
 const generateRandomAppointments = num =>

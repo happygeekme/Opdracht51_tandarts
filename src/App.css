@@ -33,3 +33,16 @@ a:visited {
   color: darksalmon;
   outline: none;
 }
+
+.form {
+  padding: 5px;
+}
+
+.formItem {
+  margin: 5px;
+}
+
+table {
+  width: 100%;
+}
+

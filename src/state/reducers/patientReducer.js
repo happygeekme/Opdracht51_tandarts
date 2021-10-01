@@ -1,15 +1,29 @@
 import { patients } from "../../data/patients";
 
-const patientReducer = (state = patients, action) => {
+const initialState = patients
+
+const patientReducer = (state = initialState, action) => {
+   
     switch(action.type) {
         
         case "ADDPATIENT":
-            console.log(action.payload)
             return state.concat(action.payload)
-
-        case "PATIENTISILL":
-            return state;
-        
+            
+        case "SICKP": {
+            return state.map(patient => {
+                    if (patient.id !== action.payload) {
+                        return patient
+                    }
+                    return {
+                        ...patient,
+                        sick: true
+                    }
+                })
+            
+         
+        }
+     
+      
         default:
             return state;
     }

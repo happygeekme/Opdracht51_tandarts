@@ -8,7 +8,6 @@ import { useSelector } from "react-redux";
 
 const App = () => {
 const appointments = useSelector(state => state.appointments)
-console.log(appointments)
 
 return (
   <Router>

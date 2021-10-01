@@ -1,19 +1,19 @@
 import appointments from "../../data/utils";
 
+const initialState = appointments;
 
-const appointmentReducer = (state = appointments, action) => {
-    console.log(appointments)
-    switch(action.type) {
-        
-        case "ADDAPPOINTMENT":
-            return state.concat(action.payload)
+const appointmentReducer = (state = initialState, action) => {
+  switch (action.type) {
+    case "ADDAPPOINTMENT":
+      return state.concat(action.payload);
 
-        case "CANCELAPPOINTMENT":
-            return state.filter(appointment => appointment.id !== action.payload)
+    case "CANCEL": 
+        return state.filter((appointment) => appointment.key !== action.payload)
+           
 
-        default:
-            return state;
-    }
+    default:
+      return state;
+  
+};
 }
-
-export default appointmentReducer
+export default appointmentReducer;
